@@ -1,0 +1,15 @@
+
+const path= require('path')
+
+console.log(path.sep)
+
+//even if there are mistakes in the path 
+//the output will be corrected
+const filepath= path.join('//','content////','text.txt')
+console.log(filepath)
+
+const base= path.basename(filepath)
+console.log(base)
+
+const fullpath=path.join(__dirname,'content','text.txt')
+console.log(fullpath)
